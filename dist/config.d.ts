@@ -1,4 +1,4 @@
 export declare const CONFIG: {
-    START_DATE: string;
-    END_DATE: string;
+    START_DATE: string | undefined;
+    END_DATE: string | undefined;
 };
