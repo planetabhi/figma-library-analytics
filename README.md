@@ -1,1 +1,4 @@
-# figma-library-analytics
+# Figma Library Analytics
+
+- Library analytics API
+- Enterprise only :/

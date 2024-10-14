@@ -1,0 +1,22 @@
+{
+  "name": "figma-library-analytics",
+  "version": "1.0.0",
+  "description": "Figma library analytics API.",
+  "main": "dist/main.js",
+  "scripts": {
+     "start": "tsc --listFiles && node dist/main.js"
+  },
+  "keywords": ["figma", "analytics"],
+  "author": "@planetabhi",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.5"
+  }
+}
