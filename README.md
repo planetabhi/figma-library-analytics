@@ -1,4 +1,3 @@
 # Figma Library Analytics
+Library analytics. For the enterprise plan only :/
 
-- Library analytics API
-- Enterprise only :/
