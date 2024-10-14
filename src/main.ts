@@ -4,18 +4,15 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// Environment variables
 const figma_access_token = process.env.FIGMA_ACCESS_TOKEN;
 const file_key = process.env.FILE_KEY;
-
-// Base URL
 const base_url = 'https://api.figma.com/v1/analytics/libraries/';
 
-// Set the dates 
+// Dates 
 const start_date = '2024-01-01';
-const end_date = '2024-04-05';
+const end_date = '2024-10-10';
 
-// Helper function to handle pagination
+
 async function fetchAllPages(url: string, headers: Record<string, string>): Promise<any[]> {
     let allData: any[] = [];
     let nextPage = true;
@@ -38,7 +35,6 @@ async function fetchAllPages(url: string, headers: Record<string, string>): Prom
     return allData;
 }
 
-// Actions by Component
 async function actions_by_component(): Promise<void> {
     const params = `/actions?group_by=component&start_date=${start_date}&end_date=${end_date}&order=asc`;
     const url = base_url + file_key + params;
@@ -60,7 +56,6 @@ async function actions_by_component(): Promise<void> {
     await csvWriter.writeRecords(data);
 }
 
-// Actions by Team
 async function actions_by_team(): Promise<void> {
     const params = `/actions?group_by=team&start_date=${start_date}&end_date=${end_date}&order=asc`;
     const url = base_url + file_key + params;
@@ -82,7 +77,6 @@ async function actions_by_team(): Promise<void> {
     await csvWriter.writeRecords(data);
 }
 
-// Usages by Component
 async function usages_by_component(): Promise<void> {
     const params = `/usages?group_by=component&start_date=${start_date}&end_date=${end_date}&order=asc`;
     const url = base_url + file_key + params;
@@ -104,7 +98,6 @@ async function usages_by_component(): Promise<void> {
     await csvWriter.writeRecords(data);
 }
 
-// Usages by File
 async function usages_by_file(): Promise<void> {
     const params = `/usages?group_by=file&start_date=${start_date}&end_date=${end_date}&order=asc`;
     const url = base_url + file_key + params;
