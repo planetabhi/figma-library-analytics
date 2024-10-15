@@ -1,6 +1,6 @@
 {
   "name": "figma-library-analytics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Figma library analytics.",
   "type": "module",
   "main": "dist/index.js",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "figma",
+    "library",
     "analytics"
   ],
   "author": "@planetabhi",
