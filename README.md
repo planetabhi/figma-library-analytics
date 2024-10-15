@@ -1,10 +1,10 @@
 # Figma Library Analytics
-Figma library analytics. For the enterprise plan only. :/
+For the enterprise plan only :/
 
 ### Installation
 
 ```bash
-npm install figma-library-analytics
+npm i figma-library-analytics
 ```
 
 Create a `.env`
@@ -44,7 +44,7 @@ figma-library-analytics
 ### Output
 
 Generated in the `output` directory
-1. `actions_by_component.csv` — actions (detachments and insertions) grouped by component.
-2. `actions_by_team.csv` — actions grouped by team.
-3. `usages_by_component.csv` — component usage statistics.
-4. `usages_by_file.csv` — component usage grouped by file.
+1. `actions_by_component.csv` — Actions (detachments and insertions) grouped by component.
+2. `actions_by_team.csv` — Actions grouped by team.
+3. `usages_by_component.csv` — Component usage statistics.
+4. `usages_by_file.csv` — Component usage grouped by file.
